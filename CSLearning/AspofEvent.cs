@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSLearning
 {
-    class Program
+    class AspofEvent
     {
-        static void Main(string[] args)
-        {
-
-
-        }
     }
 }
