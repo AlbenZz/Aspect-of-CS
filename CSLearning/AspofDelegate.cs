@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 
 
-namespace CSLearning
+namespace CSLearning.AspofDelegate
 {
 
     /*class AspofDelegate
@@ -47,22 +47,24 @@ namespace CSLearning
     public class TestBasicDelegate
     {
 
-        // code snippet
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        
+        public delegate void TestDelegate();
 
+        public TestBasicDelegate()
+        {
+            TestDelegate td = AnInsFunc;
+            td();
+            td.Invoke();
+        }
         //
         public static void Main(string[] args)
         {
+            
+
 
             Console.WriteLine("===================================unicast delegate:");
             // unicast delegate
             BasicDelegate simpleDelegate = new BasicDelegate(new TestBasicDelegate().AnInsFunc); 
+
             //BasicDelegate simpleDelegate = new BasicDelegate(AClassFunc);
 
             simpleDelegate();
@@ -79,6 +81,9 @@ namespace CSLearning
             simpleDelegate();
             Console.Read();
         }
+
+        
+
 
         // a class function
         public static void AClassFunc()
@@ -98,7 +103,6 @@ namespace CSLearning
     }
 
     #region Delegate As Parameter
-
 
     class DelegateAsParameter
     {
