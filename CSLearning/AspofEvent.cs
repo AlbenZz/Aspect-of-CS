@@ -44,6 +44,7 @@ namespace CSLearning.AspofEvent
      * 
      * 
      * Characteristics of Event on .NET Framework
+     * 
      *  1. 
      *  2. 
      *  3. 
@@ -229,6 +230,8 @@ namespace CSLearning.AspofEvent
                 );
         }
     }
+
+    // Event Subscriber #1, that contains actions for the event
     class ClockTimeLogger
     {
         public void Subscribe(Clock aClock)

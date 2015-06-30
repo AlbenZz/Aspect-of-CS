@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSLearning.AspofEvent.TestRealEventExample</StartupObject>
+    <StartupObject>CSLearning.EnumTester</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="AspofDelegate.cs" />
     <Compile Include="AspofEvent.cs" />
+    <Compile Include="AspofEnumType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
