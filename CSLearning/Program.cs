@@ -12,6 +12,7 @@ namespace CSLearning
         {
             // I'm the branches that modify a file and make a commit before other branches commit changes on the same file
             // just check out what may happen while commit changes on the file and merge it back to the master brances while there is also other branches doing the same thing.
+            // just modify the file adding comment, then try to merge it first when there is other branches modify the same file
 
         }
     }
